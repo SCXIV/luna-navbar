@@ -1,8 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-button {
+  position: absolute;
+  top: 100px;
+  left: 930px;
+}
+
 .navbar {
-  background-color: white;
+  background-color: grey;
   position: fixed;
   top: -10%;
   width: 100%;
+  height: 40px;
   transition: 0.5s ease-out;
   z-index: 1;
 }
@@ -14,7 +27,16 @@ ul {
 
 li {
   list-style-type: none;
+  padding-top: 10px;
   padding-right: 30px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
 }
 
 .navbar--visible {
@@ -24,4 +46,8 @@ li {
 
 .navbar--hidden {
   visibility: hidden;
+}
+
+.background--fade {
+  background: rgba(0, 0, 0, 0.24);
 }/*# sourceMappingURL=stylesheet.css.map */
