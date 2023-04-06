@@ -38,25 +38,36 @@
   transition: 0.5s ease-out;
   z-index: 1;
 }
-
-ul {
+.navbar ul {
   display: flex;
   justify-content: center;
 }
-
-li {
+.navbar li {
   list-style-type: none;
   padding-top: 10px;
   padding-right: 30px;
 }
-
-a:link {
+.navbar a:link {
   color: black;
   text-decoration: none;
 }
-
-a:visited {
+.navbar a:visited {
   color: black;
+}
+
+.line1--open {
+  transform: rotate(45deg) translateX(0px) translateY(0px);
+  transition: 0.3s ease-in-out;
+}
+
+.line2--hidden {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.line3--open {
+  transform: rotate(-45deg) translateX(11px) translateY(-14px);
+  transition: 0.3s ease-in-out;
 }
 
 .navbar--visible {

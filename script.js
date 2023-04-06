@@ -13,3 +13,11 @@ document.querySelectorAll(".navbar--close").forEach((a) => {
     navBar.classList.add("navbar--hidden");
   });
 });
+
+document
+  .querySelector(".hamburger-menu")
+  .addEventListener("click", function () {
+    document.querySelector(".line1").classList.add("line1--open");
+    document.querySelector(".line2").classList.add("line2--hidden");
+    document.querySelector(".line3").classList.add("line3--open");
+  });
