@@ -5,6 +5,7 @@
 }
 
 .nav-button {
+  display: none;
   position: absolute;
   top: 100px;
   left: 930px;
@@ -13,7 +14,7 @@
 .hamburger-menu {
   position: absolute;
   background-color: white;
-  top: 140px;
+  top: 100px;
   left: 930px;
   width: 35px;
   height: 35px;
@@ -27,6 +28,15 @@
   height: 4px;
   margin-bottom: 5px;
   border-radius: 4px;
+}
+.hamburger-menu .line1 {
+  transition: 0.3s ease-in-out;
+}
+.hamburger-menu .line2 {
+  transition: 0.2s ease-in-out;
+}
+.hamburger-menu .line3 {
+  transition: 0.3s ease-in-out;
 }
 
 .navbar {

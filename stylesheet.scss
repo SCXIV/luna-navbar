@@ -4,16 +4,21 @@
   box-sizing: border-box;
 }
 
+// Display set to none as there's now a hamburger menu for this
+
 .nav-button {
+  display: none;
   position: absolute;
   top: 100px;
   left: 930px;
 }
 
+// Hamburger styling
+
 .hamburger-menu {
   position: absolute;
   background-color: white;
-  top: 140px;
+  top: 100px;
   left: 930px;
   width: 35px;
   height: 35px;
@@ -28,7 +33,23 @@
     margin-bottom: 5px;
     border-radius: 4px;
   }
+
+  // For allowing the lines to change from the X to hamburger smoothly
+
+  .line1 {
+    transition: 0.3s ease-in-out;
+  }
+
+  .line2 {
+    transition: 0.2s ease-in-out;
+  }
+
+  .line3 {
+    transition: 0.3s ease-in-out;
+  }
 }
+
+// Styling for navbar, and anchor tags inside of it
 
 .navbar {
   background-color: #ffff8f;
@@ -88,7 +109,7 @@
   visibility: hidden;
 }
 
-// Class name for adding a transparent black background to the site while opening navbar
+// Class name for adding a transparent black background to the site while opening navbar (Soon)
 
 .background--fade {
   background: rgba(0, 0, 0, 0.24);
